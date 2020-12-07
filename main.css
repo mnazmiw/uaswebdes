@@ -1,0 +1,48 @@
+.tosca{
+  color: #20c997 !important;
+}
+
+.logo{
+  font-weight: 520;
+}
+
+.header{
+  background-image: url("assets/img/header.jpg");
+  color: rgba(32, 201, 151, 0.85);
+}
+
+.header h2{
+  color: #444444;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 32px;
+}
+
+button{
+  background: #20c997 !important;
+  border-color: #20c997 !important;
+  color: #ffffff !important;
+}
+
+.landing-page button{
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #20c997 !important;
+}
+
+form {
+  border-top-color: #20c997;
+}
+
+.page-footer h5{
+  color: rgb(32,201,151) !important;
+}
+
+.page-footer p{
+  color: #ffffff;
+
+}
+
+.page-footer.alamat{
+  font-size: 17px !important;
+}
