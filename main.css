@@ -18,6 +18,16 @@
   font-size: 32px;
 }
 
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  background: #20c997 !important;
+  border-color: #20c997 !important;
+  color: #ffffff !important;
+}
+
 button{
   background: #20c997 !important;
   border-color: #20c997 !important;
@@ -30,8 +40,8 @@ button{
   color: #20c997 !important;
 }
 
-form {
-  border-top-color: #20c997;
+.clean-block.clean-form form {
+  border-top-color: #20c997 !important;
 }
 
 .page-footer h5{
