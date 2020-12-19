@@ -1,5 +1,5 @@
 .tosca{
-  color: #20c997 !important;
+  color: #20c996e7 !important;
 }
 
 .logo{
@@ -7,52 +7,190 @@
 }
 
 .header{
-  background-image: url("assets/img/header.jpg");
-  color: rgba(32, 201, 151, 0.85);
+  background-image: url("assets/img/unnamed.jpg");
+  color: rgba(32, 201, 150, 0.521);
 }
 
 .header h2{
-  color: #444444;
+  color: #292929;
   font-weight: bold;
   font-style: italic;
   font-size: 32px;
 }
-
-a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+a {
+  font-size: 20px;
+  text-align: center;
   text-decoration: none;
-  background: #20c997 !important;
-  border-color: #20c997 !important;
-  color: #ffffff !important;
-}
-
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
+  transition: transform .3s ease-in;
+  
+} 
 button{
   background: #20c997 !important;
   border-color: #20c997 !important;
   color: #ffffff !important;
 }
+a:hover{
+  transform: scale(1.1);
+  text-decoration: none;
 
+}
 .landing-page button{
   background: #fff !important;
   border-color: #fff !important;
   color: #20c997 !important;
 }
-
 .clean-block.clean-form form {
   border-top-color: #20c997 !important;
 }
-
 .page-footer h5{
   color: rgb(32,201,151) !important;
 }
-
 .page-footer p{
   color: #ffffff;
-
 }
-
 .page-footer.alamat{
   font-size: 17px !important;
+}
+.card:hover{
+  text-decoration: none;
+  transform:scale(1.2,1.2);
+  -webkit-transform:scale(1.2,1.2);
+  -moz-transform:scale(1.2,1.2);
+}
+.page .text h2{
+  font-size: 2rem;
+  text-shadow: 0 1px 1px #313131;
+}
+.page .text h2::after{
+  content: "Solusi Kebutuhan Komputer Anda";
+  animation: textanim 5s linear infinite;
+}
+@keyframes textanim{
+  50%{
+    content: "Menyediakan komponen terlengkap";
+  }
+  75%{
+    content: "Kualitas yang terjamin mutunya";
+  }
+}
+.katalog{
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin: 80px auto 0;
+}
+.katalog .box{
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: #ffffff;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 5px 10px #20c997;
+}
+.katalog .box:before{
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+  opacity: 0;
+  z-index: 4;
+}
+.katalog .box:hover:before{
+  transform: scaleX(1);
+  opacity: 1;
+}
+.katalog .box:after{
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+  opacity: 0;
+  z-index: 4;
+
+}
+.katalog .box:hover:after{
+  transform: scaleY(1);
+  opacity: 1;
+}
+.container .box .imgBox{
+  position: relative;
+}
+.container .box .imgBox img{
+  width: 100%;
+}
+.katalog .box .content{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20%;
+  text-align: center;
+}
+.katalog .box .content h2{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  transform: translate(-50px);
+  opacity: 0;
+  visibility: hidden;
+}
+.katalog .box .content p{
+  font-size: 5%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+}
+.katalog .box:hover .content h2,
+.katalog .box:hover .content p{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay: 0.2s;
+}
+.judul img{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.judul h1{
+  color: #20c997;
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  margin-top: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  transition: transform .1s ease-in;
+}
+.judul h1:hover{
+  transform: scale(1.1);
+  text-decoration: none;
 }
